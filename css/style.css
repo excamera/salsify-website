@@ -29,13 +29,24 @@ Copyright © All rights Reserved
 
 /* SADJAD */
 
-.results-plot {
+.results-plot-container {
   width:90%;
+  float:right;
+}
+
+.results-plot-container .caption {
+  color:rgba(255,255,255,0.8);
+  font-style: italic;
+  line-height:125%;
+  font-size:90%;
+}
+
+.results-plot {
+  width:100%;
   border-radius:15px;
   padding-top:20px;
-  padding-bottom:15px;
   background:white;
-  float:right;
+  padding-bottom:15px;
 }
 
 .nsdi-paper {
