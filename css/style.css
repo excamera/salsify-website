@@ -7,14 +7,14 @@ Version : 1.0
 Author  : Surjith S M
 URI     : https://surjithctly.in/
 
-Copyright © All rights Reserved 
+Copyright © All rights Reserved
 
 */
 
 
 /*------------------------
 [TABLE OF CONTENTS]
-    
+
 1. GLOBAL STYLES
 2. NAVBAR
 3. HERO
@@ -178,6 +178,11 @@ p.lead {
 
 /* NAVBAR
 ----------------------*/
+
+.navbar-brand {
+  font-family: 'Bungee';
+  font-size:180%;
+}
 
 .nav-menu {
     padding: 1rem 0;
