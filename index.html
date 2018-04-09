@@ -67,20 +67,28 @@ URI     : https://colorlib.com
           <div class="row align-items-center">
             <div class="col-lg-6">
               <h1>Video is better when the codec and transport work together.</h1>
-              <p class="tagline pb-5">
+              <p class="tagline pb-4">
 
                 Salsify is a new design for real-time Internet video
-                (e.g. Skype, Facetime, WebRTC) that jointly controls
-                a video codec and a network transport protocol,
-                allowing it to respond quickly to changing network
-                conditions to avoid stalls and glitches.
+                that <strong>jointly controls</strong>
+                a video codec and a network transport protocol.
+		Current systems (Skype, Facetime, WebRTC)
+		run these components independently,
+		which produces more glitches and stalls when the network is unpredictable.
               </p>
 
-              <p class="tagline">
+              <p class="tagline pb-4">
                 In testing, Salsify consistently outperformed conventional
                 real-time video systems, in both quality and delay, by
                 substantial margins.
               </p>
+
+	      <p class="tagline">
+		Salsify is a research project at Stanford
+		University. The
+		<a href="https://cs.stanford.edu/~keithw/salsify-paper.pdf">
+research paper</a> and <a href="https://github.com/excamera/salsify-results">raw data</a> are open-access, and the <a href="https://github.com/excamera/alfalfa">implementation</a> is open-source.
+	      </p>
 
               <p class="pt-4 pb-1">
                 <a href="https://cs.stanford.edu/~keithw/salsify-paper.pdf" class="btn btn-primary">Research paper</a>
@@ -93,7 +101,7 @@ URI     : https://colorlib.com
                 <img src="images/att-results.svg" class="results-plot" />
 
                 <p class="caption mt-2">
-                  Results on an AT&T LTE trace <a href="https://cs.stanford.edu/~keithw/salsify-paper.pdf">(Figure 6)</a>.
+                  Results on an emulated AT&T LTE connection <a href="https://cs.stanford.edu/~keithw/salsify-paper.pdf">(Figure 6)</a>.
                 </p>
               </div>
 
@@ -106,8 +114,27 @@ URI     : https://colorlib.com
       <div class="container text-center">
         <h2 class="pb-3">Salsify in Action</h2>
         <div class="col-md-12 d-flex align-items-center">
-	   <iframe width="832" height="468" src="https://www.youtube-nocookie.com/embed/jaDelb4JnP4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin:0 auto;"></iframe><br>
+	  <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/jaDelb4JnP4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin:0 auto;"></iframe>
         </div>
+      </div>
+      <div class="container">
+	<div class="row"><p></div>
+	<div class="row">
+	  <div class="col-md-1"></div>
+	  <div class="col-md-10">
+	    Salsify (left side) is compared against WebRTC in Google
+	    Chrome 65 (right side) over a network path whose data rate
+	    varies with time, and then over a network that experiences
+	    occasional one-second outages. Both Salsify and WebRTC
+	    experience glitches when the network is degraded, but
+	    Salsify's joint control of the video codec and transport
+	    protocol allows it to recover more quickly, matching
+	    the compressed video output to the network's varying capacity.
+	    WebRTC takes longer
+	    to recover and tends to magnify each network glitch.
+	  </div>
+	  <div class="col-md-1"></div>
+	</div>
       </div>
     </div>
     <!-- // end .section -->
@@ -184,7 +211,7 @@ URI     : https://colorlib.com
                 Low-Latency Network Video through Tighter Integration
                 between a Video Codec and a Transport Protocol.</a>&rdquo; In
                 15th USENIX Symposium on Networked Systems Design and
-                Implementation (NSDI&rsquo;18), pp. 267-282. USENIX
+                Implementation (NSDI &rsquo;18), pp. 267-282. USENIX
                 Association, 2018.
               </p>
             </div>
