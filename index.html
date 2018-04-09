@@ -48,9 +48,9 @@ URI     : https://colorlib.com
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#in-action">IN ACTION</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#in-action">DEMO VIDEO</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="#paper">PAPER</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="#architecture">ARCHITECTURE</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a></li>
                                 <li class="nav-item"><a href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Paper</a></li>
                                 <li class="nav-item"><a href="https://github.com/excamera/alfalfa" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Code</a></li>
                             </ul>
@@ -78,7 +78,7 @@ URI     : https://colorlib.com
               </p>
 
               <p class="tagline pb-4">
-                In testing, Salsify consistently outperformed today's
+                In testing, Salsify consistently outperformed today&rsquo;s
 		real-time video systems
                 in both quality and delay.
               </p>
@@ -221,338 +221,7 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
     </div>
     <!-- // end .section -->
 
-    <div class="section" id="old-design">
-
-        <div class="container">
-          <div class="row mb-2">
-            <div class="col-lg-5">
-              <img src="images/conventional-arch.svg" style="width:100%;"/>
-             </div>
-            <div class="col-lg-7">
-              <h3>Shortcomings of the conventional design</h3>
-
-              <p>
-
-                Video conferencing programs, and in general, real-time
-                video systems are composed of two separate pieces: a
-                video codec and a transport protocol. These components
-                are designed and built separately, often by different
-                companies, then combined into an overall program.
-
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-    <div class="section" id="architecture">
-
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 d-flex flex-column align-items-center">
-                  <h2 class="text-center">Salsify's New Architecture</h2>
-
-                  <img src="images/architecture.svg" class="results-plot" />
-                </div>
-                <div class="col-md-7 d-flex align-items-center">
-
-                    <ul class="list-unstyled ui-steps">
-                        <li class="media">
-                            <div class="circle-icon mr-4">1</div>
-                            <div class="media-body">
-                                <h5>Video-Aware Transport Protocol</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem.</p>
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <div class="circle-icon mr-4">2</div>
-                            <div class="media-body">
-                                <h5>Functional Video Codec</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem eveniet</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <div class="circle-icon mr-4">3</div>
-                            <div class="media-body">
-                                <h5>Unified Control Loop</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-    <div class="section light-bg">
-      <div class="container">
-        <div class="section-title">
-          <h3>Measurement Testbed</h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-7">
-
-            <p>
-
-              To evaluate Salsify, we built an end-to-end measurement
-              testbed for real-time video systems that treats the sender
-              and receiver as black boxes, emulating a time-varying
-              network while measuring application-level video metrics
-              that affect quality of experience.
-
-            </p>
-
-          </div>
-
-          <div class="col-lg-5">
-            <img src="images/measurement.svg" class="measurement-figure" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--<div class="section light-bg">
-        <div class="container">
-            <div class="section-title">
-                <small>FEATURES</small>
-                <h3>Do more with our app</h3>
-            </div>
-
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#communication">Communication</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#schedule">Scheduling</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#messages">Messages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#livechat">Live Chat</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="communication">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
-
-                            <h2>Communicate with ease</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="schedule">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Scheduling when you want</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
-                            </p>
-                        </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="messages">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
-                            <h2>Realtime Messaging service</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="livechat">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Live chat when you needed</h2>
-                            <p class="lead">Uniquely underwhelm premium outsourcing with proactive leadership skills. </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
-                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
-                            </p>
-                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
-                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
-                            </p>
-                        </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>-->
-    <!-- // end .section -->
-
-    <!--<div class="section">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <div>
-                        <div class="box-icon"><span class="ti-rocket gradient-fill ti-3x"></span></div>
-                        <h2>Launch your App</h2>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel exercitationem eveniet vero maxime ratione </p>
-                        <a href="#" class="btn btn-primary">Read more</a></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>-->
-    <!-- // end .section -->
-
-
-    <!--<div class="section">
-        <div class="container">
-            <div class="section-title">
-                <small>TESTIMONIALS</small>
-                <h3>What our Customers Says</h3>
-            </div>
-
-            <div class="testimonials owl-carousel">
-                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
-                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
-                    <p class="text-primary">United States</p>
-                </div>
-                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
-                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
-                    <p class="text-primary">United States</p>
-                </div>
-                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
-                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
-                    <p class="text-primary">United States</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>-->
-    <!-- // end .section -->
-
-
-    <!--<div class="section light-bg" id="gallery">
-        <div class="container">
-            <div class="section-title">
-                <small>GALLERY</small>
-                <h3>App Screenshots</h3>
-            </div>
-
-            <div class="img-gallery owl-carousel owl-theme">
-                <img src="images/screen1.jpg" alt="image">
-                <img src="images/screen2.jpg" alt="image">
-                <img src="images/screen3.jpg" alt="image">
-                <img src="images/screen1.jpg" alt="image">
-            </div>
-
-        </div>
-
-    </div>-->
-    <!-- // end .section -->
-
-
-
-
-
-    <!-- <div class="section" id="pricing">
-        <div class="container">
-            <div class="section-title">
-                <small>PRICING</small>
-                <h3>Upgrade to Pro</h3>
-            </div>
-
-            <div class="card-deck">
-                <div class="card pricing">
-                    <div class="card-head">
-                        <small class="text-primary">PERSONAL</small>
-                        <span class="price">$14<sub>/m</sub></span>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <div class="list-group-item">10 Projects</div>
-                        <div class="list-group-item">5 GB Storage</div>
-                        <div class="list-group-item">Basic Support</div>
-                        <div class="list-group-item"><del>Collaboration</del></div>
-                        <div class="list-group-item"><del>Reports and analytics</del></div>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
-                    </div>
-                </div>
-                <div class="card pricing popular">
-                    <div class="card-head">
-                        <small class="text-primary">FOR TEAMS</small>
-                        <span class="price">$29<sub>/m</sub></span>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <div class="list-group-item">Unlimited Projects</div>
-                        <div class="list-group-item">100 GB Storage</div>
-                        <div class="list-group-item">Priority Support</div>
-                        <div class="list-group-item">Collaboration</div>
-                        <div class="list-group-item">Reports and analytics</div>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
-                    </div>
-                </div>
-                <div class="card pricing">
-                    <div class="card-head">
-                        <small class="text-primary">ENTERPRISE</small>
-                        <span class="price">$249<sub>/m</sub></span>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <div class="list-group-item">Unlimited Projects</div>
-                        <div class="list-group-item">Unlimited Storage</div>
-                        <div class="list-group-item">Collaboration</div>
-                        <div class="list-group-item">Reports and analytics</div>
-                        <div class="list-group-item">Web hooks</div>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
-                    </div>
-                </div>
-            </div>-->
-            <!-- // end .pricing -->
-
-
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-
-    <div class="section pt-5">
+    <div class="section pt-5" id="faq">
         <div class="container">
             <div class="section-title">
                 <small>FAQ</small>
@@ -560,18 +229,254 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
             </div>
 
             <div class="row pt-4">
-                <div class="col-md-6">
-                    <h4 class="mb-3">Can I try before I buy?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">What payment methods do you accept?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                <div class="col-md-12">
+                    <h4 class="mb-3">Is this a startup company?</h4>
+                    <p class="mb-5">No.</p>
 
-                </div>
-                <div class="col-md-6">
-                    <h4 class="mb-3">Can I change my plan later?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
-                    <h4 class="mb-3">Do you have a contract?</h4>
-                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">Are you sure? Your website looks like a startup company&rsquo;s.</h4>
+                    <p class="mb-5">It's just the HTML template! They all look like this. We promise, this is an academic research project at a university. The code is open-source, and the paper and data are open-access. The hope is that these ideas will influence the industry and lead to better real-time video for everybody.</p>
+
+                    <h4 class="mb-3">What is the main idea of Salsify?</h4>
+                    <p class="mb-3">Today's real-time video apps are
+built out of two separate components: a “video codec” that compresses
+video, and a “transport protocol” that transmits packets of data and
+estimates how many can be sent without overloading the network. These
+components are designed and built separately, often by different
+companies, then combined into an overall program such as Skype or
+FaceTime.</p>
+
+<p class="mb-3">Each component has its own control loop. The transport protocol has a &ldquo;congestion-control&rdquo; that tries to figure out how
+fast the network is, and the codec has its own &ldquo;rate-control&rdquo; algorithm
+that tries to make the compressed video match what the transport
+protocol is telling it. We found that these dueling control loops&mdash;which are
+found in Skype, FaceTime, Hangouts, and the WebRTC reference implementation&mdash;can yield
+suboptimal results over unpredictable networks.</p>
+
+<p class="mb-5">
+Salsify&rsquo;s main contribution is in <strong>jointly controlling</strong> the frame-by-frame
+control of compression and the packet-by-packet control of
+transmission in a single control loop. This lets the video stream track
+the network’s varying capacity, avoiding stalls <a href="#in-action">(see the video above)</a>.
+
+<h4 class="mb-3">How did you evaluate Salsify?</h4>
+<p class="mb-5">
+We built a <a href="https://github.com/excamera/alfalfa">prototype
+implementation</a>, including a video-aware transport protocol, a VP8
+video codec with the ability to save/restore internal state, and a
+unified control loop. We then compared it end-to-end with Skype,
+FaceTime, Hangouts, and WebRTC (as implemented in Google Chrome, with
+and without scalable/layered video coding). We emulated a hardware
+webcam and played a reproducible 720p60 test video through each
+program, with each frame tagged with a 2D barcode. We timestamped each
+frame on exit, using the hardware clock on a Blackmagic Decklink card. The unmodified sender transmitted over an emulated
+time-varying network connection (using cellsim/mahimahi), to an
+unmodified receiver. We ran the receiver program fullscreen on an HDMI
+output, which we captured and timestamped using the same Blackmagic hardware
+clock that timestamped the frame when emitted. We recognized
+the 2D barcode (which was still recognizable even after lossy video
+compression), and computed the delay and quality (structural similarity,
+or SSIM) of each frame.
+</p>
+
+<h4 class="mb-3">How big is Salsify's improvement, overall?</h4>
+
+<p class="mb-5">
+The results
+are <a href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf">in
+the paper</a>, and
+the <a href="https://github.com/excamera/salsify-results">raw data</a>
+are available on GitHub, but bottom line, on average across our
+network tests, compared with Skype, FaceTime, Hangouts, and Chrome's
+WebRTC with and without VP9-SVC, Salsify reduced delay (at the 95th
+percentile) by 4.6x, while also improving SSIM by about 60% (2.1
+dB).
+</p>
+
+<h4 class="mb-3">Don't current systems have some pretty sophisticated mechanisms for recovering from packet loss?</h4>
+
+<p class="mb-3">
+They certainly have
+<a href="https://www.callstats.io/2015/10/30/error-resilience-mechanisms-webrtc-video/">sophisticated
+mechanisms at their disposal</a>; video transmission over a lossy
+channel is a very well-studied problem. However, when we did the
+measurement carefully, we found that these mechanisms don't always work
+that well in practice, and Salsify's (much simpler, functional) approach
+works as well or better <a href="#in-action">(see the video above)</a>,
+or Figure 6(d) of the paper.
+</p>
+
+<p class="mb-5">
+There may not be an academically interesting reason for
+this&mdash;perhaps commercial systems just have a large toolbox of
+loss-recovery strategies but aren't well-tuned about when to use each
+one, at least not for the network conditions that we
+evaluated. Salsify&rsquo;s main innovation is in jointly controlling
+codec rate-control with transport congestion-control, not in inventing
+a better mechanism for loss recovery, so we don't want to overstress
+this point. However, we do think that our evaluation may be the first
+end-to-end measurement of frame-by-frame video quality and delay
+across a variety of current commercial and research codebases, and to
+the extent the findings show surprising weaknesses in the commercial
+status quo, the lesson may be that more such measurements are in order.
+</p>
+
+<h4 class="mb-3">Why do you need your video codec to be implemented
+in a purely functional style?</h4>
+<p class="mb-3">
+Current video codecs, including ours, cannot reliably predict the
+compressed size of an individual video frame in advance. Instead,
+codecs generally try to control the &ldquo;bitrate&rdquo; over several
+frames (e.g. through a VBV constraint).  If the encoder makes a frame that's too big compared with
+what the transport protocol thinks the network can accommodate, the
+application will generally send it anyway, and then, knowing
+that it has probably just caused congestion, the application might
+then pause <em>input</em> to the video encoder for a little bit to allow
+the congestion that it just caused to clear.
+</p>
+
+<p class="mb-3">
+This is not a great strategy, because the network still gets
+congested. A better plan, if the encoder makes a compressed frame
+that's too big, would be to tell the encoder to try again&mdash;either
+by re-encoding the same frame with lower quality settings, or by
+plucking a new frame off the camera and encoding that more-recent
+frame&mdash;with quality settings more likely to produce a compressed
+frame that won't congest the network. In effect, rather than having a
+fixed frame rate, it would be better to send frames only at times when
+they won't provoke packet loss and queueing delay.
+</p>
+
+<p class="mb-3">
+Salsify uses a purely functional video codec to achieve this. Our
+video codec is 100% conformant with the Google VP8 format, but has
+one major trick: the encode and decode functions are purely functional,
+with no side effects, and represent the inter-frame &ldquo;state&rdquo;
+of the decoder explicitly. This allows Salsify to make the encoder
+compress a frame relative to an arbitrary decoder state, allowing
+the application to safely skip frames on <em>output</em> from
+the encoder, not just on input.
+</p>
+
+<p class="mb-5">
+Salsify's codec allows the sender to send frames when it's pretty sure
+they won't congest the network (discarding already-encoded frames if
+necessary) rather than sticking to a fixed frame rate. It also allows
+the codec to produce frames that more closely match the available
+network capacity, by simply producing two versions of each frame:
+one with slightly higher quality than the previous successful option,
+and one with slightly lower quality. The application chooses from
+among these options (or no option) after seeing the actual compressed size
+of each option.
+</p>
+
+<h4 class="mb-3">Okay, but if you didn't have a purely functional video codec,
+could you still achieve Salsify&rsquo;s performance?</h4>
+
+<p class="mb-5">
+Maybe! <strong>If</strong> mainstream video encoders could allow the
+application to discard already-encoded frames, and <strong>if</strong>
+they could accurately hit a frame-size target, then Salsify's purely
+functional video codec would probably not be necessary. The first
+<em>may</em> be achievable with smart use of reference invalidation
+(although not clear&mdash;what about ancillary inter-frame state
+stored in probability tables?). The second <em>may</em> be achievable
+with more work (and more cycles) put into intra-frame rate control.
+So, it's possible. But it was a heck of a lot easier to do when
+the codec exposes a way to save and restore its internal state.
+</p>
+
+<h4 class="mb-3">What part of Salsify is new?</h4>
+<p class="mb-3">
+Really just the overall architecture. The compressed video format is
+Google&rsquo;s <a href="https://en.wikipedia.org/wiki/VP8">VP8</a>,
+finalized in 2008 and largely superseded
+by <a href="https://en.wikipedia.org/wiki/VP9">VP9</a> and
+H.265. Salsify&rsquo;s purely functional VP8 encoder/decoder is a
+lightly modified version of the one we used last year
+for <a href="http://ex.camera">ExCamera</a>, when the benefit was in
+allowing us to subdivide video encoding into tiny threads (smaller
+than the interval between key frames) and parallelize across thousands
+of threads on AWS Lambda. This year, the benefit is in allowing
+Salsify to explore an execution path of the video codec without
+committing to it. Salsify's congestion-control scheme is based
+on <a href="http://alfalfa.mit.edu">Sprout-EWMA</a>, which in turn
+is based on earlier work in <a href="http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/95/pp.pdf">packet-pair</a> and packet-train estimation
+of available bandwidth. Salsify's loss-recovery strategy is related
+to <a href="https://mosh.org">Mosh&rsquo;s</a> &ldquo;p-retransmissions.&rdquo;
+</p>
+
+<p class="mb-5">
+What&rsquo;s new, then, is the way the pieces are put together: the
+joint control of codec rate-control and transport congestion-control,
+and the use of a functional video codec to send encoded frames only at
+moments when the network can accomodate them.
+</p>
+
+<h4 class="mb-3">Can I use Salsify to talk to my parents?</h4>
+
+<p class="mb-5">
+You probably don&rsquo;t want to, at least not
+yet. The <a href="https://github.com/excamera/alfalfa">implementation</a>
+is only for Linux and doesn't have audio. The value is mostly in
+demonstrating the benefit of Salsify&rsquo;s design and in allowing
+other researchers (and industry) to replicate our results, with the
+intent that Salsify&rsquo;s ideas will be incorporated by industry
+and improve the quality of real-time video in many applications.
+</p>
+
+<h4 class="mb-3">Can industry incorporate Salsify?</h4>
+
+<p class="mb-5">
+Legally, sure, we'd love that, and we&rsquo;re eager to
+help. Technically, it may not be so easy. It would be a lot simpler if
+Salsify were just a better video codec, or a better transport
+protocol.  Because Salsify is instead a better way of putting the
+pieces together, we expect it will be harder to retrofit into an
+existing application without significant refactoring. In our
+conversations with industry, we&rsquo;ve found that the burden of
+proof will be high to demonstrate (1) that Salsify&rsquo;s gains are
+real, and (2) that they can&rsquo;t be achieved with less-intrusive
+surgery to existing applications.
+</p>
+
+<h4 class="mb-3">What would you say to tomorrow&rsquo;s codec implementers?</h4>
+
+<p class="mb-5">
+Standardize an interface to export and import the encoder&rsquo;s and
+decoder&rsquo;s internal state between frames! Even if the format of that state is
+opaque and unstandardized across codecs, that&rsquo;s okay.  Last
+year, we demonstrated how doing so can
+allow <a href="http://ex.camera">fine-grained parallelization of
+video encoding</a>. This year, it&rsquo;s letting Salsify explore
+execution paths of the video codec without committing to them (to
+match each frame&rsquo;s compressed size to the network capacity, and
+skip already-encoded frames without penalty). We can&rsquo;t prove
+that a save/restore interface is strictly necessary to achieve this
+performance, but it makes things a heck of a lot easier and
+simpler. This should be a requirement for all codecs going forward: exposing
+the encoder and decoder only as stream operators with inaccessible, mutable,
+internal state is terribly limiting and inconvenient.
+</p>
+
+<h4 class="mb-3">Who&rsquo;s responsible for Salsify?</h4>
+
+<p class="mb-3">
+Salsify is led by <a href="https://github.com/sadjad">Sadjad
+Fouladi</a>, a doctoral student in computer science at Stanford
+University, along with fellow Stanford students John Emmons, Emre
+Orbay, and Riad S. Wahby, as well as Catherine Wu of
+Saratoga High School in Saratoga, California. The project is advised
+by <a href="https://cs.stanford.edu/~keithw">Keith Winstein</a>, an
+assistant professor of computer science.
+</p>
+
+<p class="mb-5">
+Salsify was funded the National Science Foundation and the Defense
+Advanced Research Projects Agency (DARPA). Salsify has also received
+support from Google, Huawei, VMware, Dropbox, Facebook, and
+the <a href="https://platformlab.stanford.edu">Stanford Platform
+Lab</a>.
+</p>
 
                 </div>
             </div>
