@@ -260,22 +260,44 @@ the network’s varying capacity, avoiding stalls <a href="#in-action">(see the 
 
 <h4 class="mb-3">How did you evaluate Salsify?</h4>
 <p class="mb-5">
+We played the same video through Salsify&rsquo;s sender, and the
+unmodified sender programs for Skype, FaceTime (on a Mac), Google
+Hangouts, and WebRTC in Google Chrome. (We did not implement any of
+the comparator schemes; we treated each scheme as a black box and ran
+the unmodified code.) We allowed the sender to transmit over an
+emulated network to its receiver, captured the receiver&rsquo;s video,
+and calculated the delay and quality of each frame.
+</p>
+
+<h4 class="mb-3">In detail, how did you evaluate Salsify?</h4>
+
+  <div class="row">
+    <div class="col-md-6">
+      <img src="images/testbed.jpeg" width="100%">
+    </div>
+    <div class="col-md-6">
+      <img src="images/measurement.svg" width="100%">
+    </div>
+  </div>
+
+<p class="mb-5">
 We built a <a href="https://github.com/excamera/alfalfa">prototype
-implementation</a>, including a video-aware transport protocol, a VP8
-video codec with the ability to save/restore internal state, and a
-unified control loop. We then compared it end-to-end with Skype,
-FaceTime, Hangouts, and WebRTC (as implemented in Google Chrome, with
-and without scalable/layered video coding). We emulated a hardware
-webcam and played a reproducible 720p60 test video through each
-program, with each frame tagged with a 2D barcode. We timestamped each
-frame on exit, using the hardware clock on a Blackmagic Decklink card. The unmodified sender transmitted over an emulated
-time-varying network connection (using cellsim/mahimahi), to an
-unmodified receiver. We ran the receiver program fullscreen on an HDMI
-output, which we captured and timestamped using the same Blackmagic hardware
-clock that timestamped the frame when emitted. We recognized
-the 2D barcode (which was still recognizable even after lossy video
-compression), and computed the delay and quality (structural similarity,
-or SSIM) of each frame.
+implementation</a> of Salsify, including a video-aware transport
+protocol, a VP8 video codec with the ability to save/restore internal
+state, and a unified control loop. We then compared it end-to-end with
+Skype, FaceTime, Hangouts, and WebRTC (as implemented in Google
+Chrome, with and without scalable/layered video coding). We emulated a
+hardware webcam and played a reproducible 720p60 test video through
+each program, with each frame tagged with a 2D barcode. We timestamped
+each frame on exit, using the hardware clock on a Blackmagic Decklink
+card. The unmodified sender transmitted over an emulated time-varying
+network connection (using <a href="https://github.com/keithw/multisend">cellsim</a>/<a href="http://mahimahi.mit.edu">mahimahi</a>), to an unmodified
+receiver. We ran the receiver program fullscreen on an HDMI output,
+which we captured and timestamped using the same Blackmagic hardware
+clock that timestamped the frame when emitted. We recognized the 2D
+barcode (which was still recognizable even after lossy video
+compression), and computed the delay and quality (structural
+similarity, or SSIM) of each frame.
 </p>
 
 <h4 class="mb-3">How big is Salsify's improvement, overall?</h4>
