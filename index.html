@@ -258,6 +258,20 @@ control of compression and the packet-by-packet control of
 transmission in a single control loop. This lets the video stream track
 the network’s varying capacity, avoiding stalls <a href="#in-action">(see the video above)</a>.
 
+<h4 class="mb-3">How big is Salsify&rsquo;s improvement, overall?</h4>
+
+<p class="mb-5">
+The results
+are <a href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf">in
+the paper</a>, and
+the <a href="https://github.com/excamera/salsify-results">raw data</a>
+are available on GitHub, but bottom line, on average across our
+network tests, compared with Skype, FaceTime, Hangouts, and Chrome's
+WebRTC with and without VP9-SVC, <strong>Salsify reduced delay (at the 95th
+percentile) by 4.6&times;, while also improving SSIM by about 60% (2.1
+dB)</strong>.
+</p>
+
 <h4 class="mb-3">Can I use Salsify to talk to my parents?</h4>
 
 <p class="mb-5">
@@ -312,20 +326,6 @@ similarity, or SSIM) of each frame. To the best of our knowledge,
 this is the first <a href="https://github.com/excamera/salsify-results">dataset</a>
 giving an end-to-end frame-by-frame measurement of the quality and delay of a diverse array of
 commercial and research codebases for real-time Internet video.
-</p>
-
-<h4 class="mb-3">How big is Salsify's improvement, overall?</h4>
-
-<p class="mb-5">
-The results
-are <a href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf">in
-the paper</a>, and
-the <a href="https://github.com/excamera/salsify-results">raw data</a>
-are available on GitHub, but bottom line, on average across our
-network tests, compared with Skype, FaceTime, Hangouts, and Chrome's
-WebRTC with and without VP9-SVC, <strong>Salsify reduced delay (at the 95th
-percentile) by 4.6&times;, while also improving SSIM by about 60% (2.1
-dB)</strong>.
 </p>
 
 <h4 class="mb-3">Don't current systems have some pretty sophisticated mechanisms for recovering from packet loss?</h4>
