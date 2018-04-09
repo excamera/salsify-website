@@ -258,15 +258,26 @@ control of compression and the packet-by-packet control of
 transmission in a single control loop. This lets the video stream track
 the network’s varying capacity, avoiding stalls <a href="#in-action">(see the video above)</a>.
 
+<h4 class="mb-3">Can I use Salsify to talk to my parents?</h4>
+
+<p class="mb-5">
+You probably don&rsquo;t want to, at least not
+yet. The <a href="https://github.com/excamera/alfalfa">implementation</a>
+is only for Linux and doesn't have audio. The value is mostly in
+demonstrating the benefit of Salsify&rsquo;s design and in allowing
+other researchers (and industry) to replicate our results, with the
+intent that Salsify&rsquo;s ideas will be incorporated by others
+and improve the quality of real-time video in many applications.
+</p>
+
 <h4 class="mb-3">How did you evaluate Salsify?</h4>
 <p class="mb-5">
 We played the same video through Salsify&rsquo;s sender, and the
-unmodified sender programs for Skype, FaceTime (on a Mac), Google
-Hangouts, and WebRTC in Google Chrome. (We did not implement any of
-the comparator schemes; we treated each scheme as a black box and ran
-the unmodified code.) We allowed the sender to transmit over an
+sender programs for Skype, FaceTime (on a Mac), Google Hangouts, and
+WebRTC in Google Chrome. We allowed the sender to transmit over an
 emulated network to its receiver, captured the receiver&rsquo;s video,
-and calculated the delay and quality of each frame.
+and calculated the delay and quality of each frame. We tested different
+kinds of emulated networks: LTE, slower cellular links, and long-distance Wi-Fi.
 </p>
 
 <h4 class="mb-3">In detail, how did you evaluate Salsify?</h4>
@@ -297,7 +308,10 @@ which we captured and timestamped using the same Blackmagic hardware
 clock that timestamped the frame when emitted. We recognized the 2D
 barcode (which was still recognizable even after lossy video
 compression), and computed the delay and quality (structural
-similarity, or SSIM) of each frame.
+similarity, or SSIM) of each frame. To the best of our knowledge,
+this is the first <a href="https://github.com/excamera/salsify-results">dataset</a>
+giving an end-to-end frame-by-frame measurement of the quality and delay of a diverse array of
+commercial and research codebases for real-time Internet video.
 </p>
 
 <h4 class="mb-3">How big is Salsify's improvement, overall?</h4>
@@ -309,9 +323,9 @@ the paper</a>, and
 the <a href="https://github.com/excamera/salsify-results">raw data</a>
 are available on GitHub, but bottom line, on average across our
 network tests, compared with Skype, FaceTime, Hangouts, and Chrome's
-WebRTC with and without VP9-SVC, Salsify reduced delay (at the 95th
-percentile) by 4.6x, while also improving SSIM by about 60% (2.1
-dB).
+WebRTC with and without VP9-SVC, <strong>Salsify reduced delay (at the 95th
+percentile) by 4.6&times;, while also improving SSIM by about 60% (2.1
+dB)</strong>.
 </p>
 
 <h4 class="mb-3">Don't current systems have some pretty sophisticated mechanisms for recovering from packet loss?</h4>
@@ -473,18 +487,6 @@ and the use of a functional video codec to send encoded frames only at
 moments when the network can accomodate them.
 </p>
 
-<h4 class="mb-3">Can I use Salsify to talk to my parents?</h4>
-
-<p class="mb-5">
-You probably don&rsquo;t want to, at least not
-yet. The <a href="https://github.com/excamera/alfalfa">implementation</a>
-is only for Linux and doesn't have audio. The value is mostly in
-demonstrating the benefit of Salsify&rsquo;s design and in allowing
-other researchers (and industry) to replicate our results, with the
-intent that Salsify&rsquo;s ideas will be incorporated by others
-and improve the quality of real-time video in many applications.
-</p>
-
 <h4 class="mb-3">Can industry incorporate Salsify?</h4>
 
 <p class="mb-5">
@@ -517,6 +519,19 @@ performance, but it makes things a heck of a lot easier and
 simpler. This should be a requirement for all codecs going forward: exposing
 the encoder and decoder only as stream operators with inaccessible, mutable,
 internal state is terribly limiting and inconvenient.
+</p>
+
+<h4 class="mb-3">Why the name &ldquo;Salsify&rdquo;?</h4>
+<p class="mb-5">
+It's not a very interesting reason. Salsify comes from an older
+project called &ldquo;ALFalfa,&rdquo; for the use
+of <a href="https://en.wikipedia.org/wiki/Application-layer_framing">Application
+Layer Framing</a> in video. Alfalfa gave way
+to <a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/winstein">Sprout</a>,
+a congestion-control scheme intended for real-time applications, and
+now Salsify, a new design where congestion-control (in the transport
+protocol) and rate control (in the video codec) are jointly controlled.
+Alfalfa, Sprout, and Salsify are all plantish foods.
 </p>
 
 <h4 class="mb-3">Who&rsquo;s responsible for Salsify?</h4>
