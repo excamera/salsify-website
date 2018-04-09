@@ -234,7 +234,7 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
                     <p class="mb-5">No.</p>
 
                     <h4 class="mb-3">Are you sure? Your website looks like a startup company&rsquo;s.</h4>
-                    <p class="mb-5">It's just the HTML template! They all look like this. We promise, this is an academic research project at a university. The code is open-source, and the paper and data are open-access. The hope is that these ideas will influence the industry and lead to better real-time video for everybody.</p>
+                    <p class="mb-5">It's just the HTML template! They all look like this. We promise, this is an academic research project at a university. The code is open-source, and the paper and raw data are open-access. The hope is that these ideas will influence the industry and lead to better real-time video for everybody.</p>
 
                     <h4 class="mb-3">What is the main idea of Salsify?</h4>
                     <p class="mb-3">Today's real-time video apps are
@@ -385,6 +385,29 @@ So, it's possible. But it was a heck of a lot easier to do when
 the codec exposes a way to save and restore its internal state.
 </p>
 
+<h4 class="mb-3">When you say &ldquo;purely functional video codec,&rdquo; does it mean anything more than being able to dump and restore the internal state of the encoder and decoder between frames?</h4>
+
+<p class="mb-5">
+No, that&rsquo;s pretty much all we mean by it. If you have that, then
+the decoder can be described as a function that takes in a state and a
+compressed frame, and produces a modified state and an image for
+display. The encoder can be described as a function that takes in a
+state, an image, and some sort of quality settings, and produces a
+modified state and a compressed frame.
+</p>
+
+<h4 class="mb-3">How is it possible that a VP8 codec written by one graduate student in a few months can outperform production-grade VP9 and H.264 codecs?</h4>
+
+<p class="mb-5">
+Because it&rsquo;s not a fair fight between codecs&mdash;Salsify is a different way
+of putting the pieces (compression and transmission) together, not a
+new compression format.  To the extent these results persuade you of
+anything, they should make you think that in the domain of Internet
+videoconferencing, further innovation in video <em>codecs</em> may
+have reached the point of diminishing returns, but
+video <em>systems</em> still have lots of low-hanging fruit.
+</p>
+
 <h4 class="mb-3">What part of Salsify is new?</h4>
 <p class="mb-3">
 Really just the overall architecture. The compressed video format is
@@ -464,7 +487,7 @@ internal state is terribly limiting and inconvenient.
 Salsify is led by <a href="https://github.com/sadjad">Sadjad
 Fouladi</a>, a doctoral student in computer science at Stanford
 University, along with fellow Stanford students John Emmons, Emre
-Orbay, and Riad S. Wahby, as well as Catherine Wu of
+Orbay, and Riad S. Wahby, as well as Catherine Wu, a junior at
 Saratoga High School in Saratoga, California. The project is advised
 by <a href="https://cs.stanford.edu/~keithw">Keith Winstein</a>, an
 assistant professor of computer science.
