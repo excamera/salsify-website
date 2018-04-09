@@ -408,6 +408,22 @@ have reached the point of diminishing returns, but
 video <em>systems</em> still have lots of low-hanging fruit.
 </p>
 
+<h4 class="mb-3">Is Salsify a &ldquo;cross-layer&rdquo; approach?</h4>
+<p class="mb-5">
+Not exactly, at least not in the way the term is typically used to
+apply to systems
+like <a href="http://pages.cs.wisc.edu/~suman/pubs/apex.pdf">Apex</a>
+or <a href="http://people.csail.mit.edu/szym/softcast/tr2.pdf">SoftCast</a>.
+These systems reach into the physical layer and jointly handle
+&ldquo;source coding&rdquo; (video compression) and &ldquo;channel
+coding&rdquo; (error correction coding and modulation). By contrast,
+Salsify is a conventional Internet application that sends UDP
+datagrams point-to-point over the Internet, just like Skype, FaceTime,
+and WebRTC (and almost like Hangouts, which sends UDP datagrams
+through a nearby Google CDN node).
+
+</p>
+
 <h4 class="mb-3">What part of Salsify is new?</h4>
 <p class="mb-3">
 Really just the overall architecture. The compressed video format is
@@ -443,7 +459,7 @@ yet. The <a href="https://github.com/excamera/alfalfa">implementation</a>
 is only for Linux and doesn't have audio. The value is mostly in
 demonstrating the benefit of Salsify&rsquo;s design and in allowing
 other researchers (and industry) to replicate our results, with the
-intent that Salsify&rsquo;s ideas will be incorporated by industry
+intent that Salsify&rsquo;s ideas will be incorporated by others
 and improve the quality of real-time video in many applications.
 </p>
 
