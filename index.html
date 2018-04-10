@@ -433,6 +433,17 @@ state, an image, and some sort of quality settings, and produces a
 modified state and a compressed frame.
 </p>
 
+<h4 class="mb-3">Does this require a software codec?</h4>
+
+<p class="mb-5">
+Not really&mdash;it requires a codec that can export and import its
+internal state, or can otherwise accurately hit a target size for an
+individual compressed frame and can &ldquo;cancel&rdquo; an
+already-encoded frame (including its effect on references and
+probability tables). Whether the codec is implemented in software
+or hardware isn&rsquo;t important to Salsify.
+</p>
+
 <h4 class="mb-3">How is it possible that a VP8 encoder written by one graduate student in a few months can outperform production-grade VP9 and H.264 encoders?</h4>
 
 <p class="mb-5">
