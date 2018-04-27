@@ -257,6 +257,7 @@ p.lead {
 
 .navbar-nav .nav-link {
     position: relative;
+    text-transform:uppercase;
 }
 
 @media (min-width: 992px) {
