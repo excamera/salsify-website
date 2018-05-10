@@ -93,7 +93,7 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
               <p class="pt-4 pb-1">
                 <a href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf" class="btn btn-primary">Research paper</a>
                 <a href="https://github.com/excamera/alfalfa" class="btn btn-light">Code</a>
-                <a href="https://engineering.stanford.edu/magazine/article/can-computer-science-take-glitch-and-stall-out-real-time-video" class="btn btn-dark">News release</a>
+                <a href="https://engineering.stanford.edu/magazine/article/can-computer-science-take-glitch-and-stall-out-real-time-video" class="btn btn-light">News release</a>
               </p>
             </div>
 
@@ -111,29 +111,27 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
         </div>
     </header>
 
-    <div class="section" id="in-action">
+    <div class="section light-bg" id="in-action">
       <div class="container text-center">
         <h2 class="pb-3">Salsify in Action</h2>
-        <div class="col-md-12 d-flex align-items-center">
-	  <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/jaDelb4JnP4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin:0 auto;"></iframe>
+        <div class="row mb-2">
+          <div class="col-lg-6 text-left">
+            Salsify (left side) is compared with WebRTC in Google Chrome 65 (right
+            side) over a network path whose data rate varies with time, then over
+            a network that experiences occasional one-second outages. Both Salsify
+            and WebRTC experience glitches when the network is degraded, but
+            Salsify's joint control of the video codec and transport protocol
+            allows it to recover more quickly, matching the compressed video
+            output to the network's varying capacity.
+          </div>
+          <div class="col-lg-6 align-items-center">
+            <div class="video-wrapper" style="width:100%;">
+              <iframe src="https://www.youtube-nocookie.com/embed/jaDelb4JnP4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin:0 auto;"></iframe>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container">
-	<div class="row"><p></div>
-	<div class="row">
-	  <div class="col-md-1"></div>
-	  <div class="col-md-10">
-	    Salsify (left side) is compared with WebRTC in Google
-	    Chrome 65 (right side) over a network path whose data rate
-	    varies with time, then over a network that experiences
-	    occasional one-second outages. Both Salsify and WebRTC
-	    experience glitches when the network is degraded, but
-	    Salsify's joint control of the video codec and transport
-	    protocol allows it to recover more quickly, matching
-	    the compressed video output to the network's varying capacity.
-	  </div>
-	  <div class="col-md-1"></div>
-	</div>
       </div>
     </div>
     <!-- // end .section -->
@@ -195,7 +193,7 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
     </div>
     -->
 
-    <div class="section light-bg" id="paper">
+    <div class="section" id="paper">
 
         <div class="container">
           <div class="row mb-2">
@@ -221,6 +219,9 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
 
     </div>
     <!-- // end .section -->
+
+    <div class="section pt-5 light-bg" id="tech-talk">
+    </div>
 
     <div class="section pt-5" id="faq">
         <div class="container">
@@ -636,7 +637,7 @@ Lab</a>.
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-	
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96350853-2"></script>
     <script>
