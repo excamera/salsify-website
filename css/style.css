@@ -223,6 +223,12 @@ p.lead {
     line-height: 1.4;
 }
 
+.btn-lighter {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.26);
+    margin-left:0;
+    background:#fffcff;
+}
+
 .btn-dark {
     border-radius: 3px;
     background: #202080;
