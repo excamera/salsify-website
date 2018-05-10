@@ -50,6 +50,7 @@ URI     : https://colorlib.com
                                 <li class="nav-item"> <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#in-action">Demo Video</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="#paper">Paper</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#tech-video">Tech Video</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a></li>
                                 <li class="nav-item"><a href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Paper</a></li>
                                 <li class="nav-item"><a href="https://github.com/excamera/alfalfa" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Code</a></li>
@@ -64,9 +65,13 @@ URI     : https://colorlib.com
 
     <header class="bg-gradient" id="home">
         <div class="container mt-5 pb-5">
-          <div class="row align-items-center">
+          <div class="row">
+            <div class="col-lg-12 text-center mb-3">
+              <h1 class="display-4">Video is better when the codec and transport work together.</h1>
+            </div>
+          </div>
+          <div class="row align-items-top">
             <div class="col-lg-6">
-              <h1>Video is better when the codec and transport work together.</h1>
               <p class="tagline pb-4">
 
                 Salsify is a new design for real-time Internet video
@@ -102,7 +107,7 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
                 <img src="images/att-results.svg" class="results-plot" />
 
                 <p class="caption mt-2">
-                  Results on an emulated AT&T LTE connection <a href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf">(Figure 6)</a>.
+                  Results on an emulated AT&T LTE connection.
                 </p>
               </div>
 
@@ -114,21 +119,29 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
     <div class="section light-bg" id="in-action">
       <div class="container text-center">
         <h2 class="pb-3">Salsify in Action</h2>
-        <div class="row mb-2">
-          <div class="col-lg-6 text-left">
-            Salsify (left side) is compared with WebRTC in Google Chrome 65 (right
-            side) over a network path whose data rate varies with time, then over
-            a network that experiences occasional one-second outages. Both Salsify
-            and WebRTC experience glitches when the network is degraded, but
-            Salsify's joint control of the video codec and transport protocol
-            allows it to recover more quickly, matching the compressed video
-            output to the network's varying capacity.
-          </div>
-          <div class="col-lg-6 align-items-center">
+        <div class="row mb-2 align-items-center">
+
+          <div class="col-lg-6 mb-2">
             <div class="video-wrapper" style="width:100%;">
               <iframe src="https://www.youtube-nocookie.com/embed/jaDelb4JnP4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin:0 auto;"></iframe>
             </div>
           </div>
+
+          <div class="col-lg-6 text-left">
+            <p class="video-description">
+
+              Salsify (left side) is compared with WebRTC in Google Chrome 65
+              (right side) over a network path whose data rate varies with time,
+              then over a network that experiences occasional one-second
+              outages. Both Salsify and WebRTC experience glitches when the
+              network is degraded, but Salsify's joint control of the video
+              codec and transport protocol allows it to recover more quickly,
+              matching the compressed video output to the network's varying
+              capacity.
+
+            </p>
+          </div>
+
         </div>
       </div>
       <div class="container">
@@ -196,7 +209,7 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
     <div class="section" id="paper">
 
         <div class="container">
-          <div class="row mb-2">
+          <div class="row mb-2 align-items-center">
             <div class="col-lg-6">
               <div class="box-icon"><a class="ti-write gradient-fill ti-3x" href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf"></a></div>
               <h3>Research Paper</h3>
@@ -210,17 +223,50 @@ research paper</a> and <a href="https://github.com/excamera/salsify-results">raw
                 15th USENIX Symposium on Networked Systems Design and
                 Implementation (NSDI &rsquo;18), pp. 267&ndash;282. USENIX
                 Association, 2018.
+
               </p>
             </div>
-            <div class="col-lg-1"></div>
-            <a class="col-lg-5 nsdi-paper" href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf"></a>
+            <div class="col-lg-6">
+              <div class="paper-wrapper">
+                <a class="nsdi-paper" href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf"></a>
+              </div>
+            </div>
           </div>
         </div>
 
     </div>
     <!-- // end .section -->
 
-    <div class="section pt-5 light-bg" id="tech-talk">
+    <div class="section pt-5 light-bg" id="tech-video">
+      <div class="container">
+        <div class="row mb-2 align-items-center">
+          <div class="col-lg-6">
+            <div class="box-icon"><a class="ti-microphone gradient-fill ti-3x" href="https://www.usenix.org/system/files/conference/nsdi18/nsdi18-fouladi.pdf"></a></div>
+            <h3>Tech Video</h3>
+
+            <p>
+
+              Salsify was presented at <a
+              href="https://www.usenix.org/conference/nsdi18">15th USENIX
+              Symposium on Networked Systems Design and Implementation</a>. The talk
+              was given April 10, 2018.
+
+            </p>
+
+            <p>
+              <a href="https://www.youtube.com/watch?v=LPj2ffe7Isk" class="btn btn-primary">Watch</a>
+              <a href="https://www.usenix.org/sites/default/files/conference/protected-files/nsdi18_slides_fouladi.pdf" class="btn btn-light">View The Slides</a>
+            </p>
+
+          </div>
+
+          <div class="col-lg-6">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/LPj2ffe7Isk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin:0 auto;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section pt-5" id="faq">
@@ -298,12 +344,12 @@ kinds of emulated networks: LTE, slower cellular links, and long-distance Wi-Fi.
 
 <h4 class="mb-3">In detail, how did you evaluate Salsify?</h4>
 
-  <div class="row">
-    <div class="col-md-6">
-      <img src="images/testbed.jpeg" width="100%">
+  <div class="row measurement-sys align-items-center pt-3 mb-4">
+    <div class="col-md-6 mb-4">
+      <a href="images/testbed.jpeg" target="_blank"><img src="images/testbed.jpeg"></a>
     </div>
-    <div class="col-md-6">
-      <img src="images/measurement.svg" width="100%">
+    <div class="col-md-6 pl-5">
+      <a href="images/measurement.svg" target="_blank"><img src="images/measurement.svg"></a>
     </div>
   </div>
 
