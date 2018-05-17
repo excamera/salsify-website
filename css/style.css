@@ -47,8 +47,9 @@ Copyright © All rights Reserved
 }
 
 .video-description {
-  font-size:1.3rem;
+  font-size:20px;
   font-weight:400;
+	padding-top:10px;
 }
 
 .results-plot-container {
@@ -140,7 +141,7 @@ h2 {
 
 h3 {
     color: #633991;
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 500;
 }
 
